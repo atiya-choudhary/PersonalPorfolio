@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Profyl</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <script type="text/javascript">
+		$("#buttons li").click(function(){
+			$(this).toggleClass("active");
+			$('#buttons li a').toggleClass("active");
+		})
+	</script>
+
+    <nav class="navbar">
+		<div class="max-width">
+			<div class="logo"><a href="#">My  <span> Profyl</span></a></div>
+			<ul class="menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Qualification.html">Qualification</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+	</nav>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Way to contact me</div>
+                    <div class="icons">
+
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Atiya choudhary</div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">405,B/wing Mumbai 400072</div>
+                            </div>
+                        </div>
+                        
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">atiyachoudhary2000@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column right">
+                        <div class="text">Message me</div>
+
+                    <form action="Success.html" target="_blank" onsubmit="return validateForm()" novalidate>
+                        <div class="fields">
+                        <table class="tabel">
+                            <tr><td><label for="fname">Name:</label></td>
+                                <td><input class="info" id="fname" name="myName" placeholder="Name" onblur="validate1()" ></td></tr>
+                            <tr><td></td><td id="error1"></td></tr>
+                            
+                            <tr><td></div><label for="mail">Email Id: </label></td>
+                                <td><input class="info" type="email"  id="mail" placeholder="Email"  onblur="validate4()"></td></td></tr>
+                            <tr><td></td><td id="error4"></td></tr>
+
+                            <tr><td><label for="uname">Set Username: </label></td>
+                                <td> <input class="info" type="text"  id="uname" placeholder="Username" onblur="validate5()" required></td></tr>
+                            <tr><td></td><td id="error5"></td></tr>
+
+                            <tr><td> <label for="pass">Set Password: </label></td>
+                                <td><input class="info" type="password"  id="pass"placeholder="Password" required  onblur="validate6()"></td></tr>
+                            <tr><td></td><td id="error6"></td></tr>
+
+                            <tr><td> <label for="confirmpass">Confirm Password: </label></td>
+                                <td><input  class="info" type="password"  id="confirmpass" placeholder="Confirm Password"  onblur="validate7()" required></td></tr>
+                            <tr><td></td><td id="error7"></td></tr>
+
+                            <tr><td><label for="description"> Add Description: </label></td>
+                                <td><input class="info" id="description" type="text" id="description" placeholder="Add Project description"></td></tr>
+                            <tr><td></td><td> <input class="button" type="submit" value="Submit"> <input class="button" type="reset"></td></tr>
+
+                        </table>
+                        </div>
+                    </form>
+                   </div>
+                
+                   
+        </section>
+
+        <ul id="buttons">
+			<li class="fb">
+			  <a href="https://www.facebook.com/login.php/" target="_blank" title="Facebook">
+				<i class="fab fa-facebook-f"></i>
+			  </a>
+			</li>
+			<li class="tw">
+			  <a href="https://twitter.com/i/flow/login"  target="_blank" title="Twitter">
+				<i class="fab fa-twitter"></i>
+			  </a>
+			</li>
+			<li class="in">
+			  <a href="https://www.instagram.com/?hl=en"  target="_blank" title="Instagram">
+				<i class="fab fa-instagram"></i>
+			  </a>
+			</li>
+			<li class="gh">
+			  <a href="https://github.com/atiya-choudhary" target="_blank" title="Github">
+				<i class="fab fa-github"></i>
+			  </a>
+			</li>
+		  </ul>
+
+          <script src="script.js"></script>
+                    
+</body>
+</html>
